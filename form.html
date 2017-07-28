@@ -20,11 +20,32 @@
 
 	<form>
 		<label for="email">Email:</label>
-		<input id="email" type="email" placeholder="email" required>
+		<input id="email" type="email" placeholder="email">
 
 		<label for="password">Password:</label>
-		<input id="password" type="password" placeholder="password" required>
-		<input type="submit">	
+		<input id="password" type="password" placeholder="password">
+
+		<p>What is your favorite pet?</p>
+
+		<label>
+			Dogs:
+			<input type="radio" name="petChoice" value="DOGS">			
+		</label>
+		<label>
+			Cats:
+			<input type="radio" name="petChoice" value="CATS">
+		</label>
+
+		<p>What is your mood?</p>
+		<select name="mood">
+			<option value="Happy">:)</option>
+			<option value="Confused">:/</option>
+			<option value="Indifferent">:|</option>
+		</select>
+
+		<textarea name="paragraph" cols="10" rows="5"></textarea>
+
+		<button>Go!</button>
 	</form>
 </body>
 </html>
