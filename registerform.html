@@ -8,40 +8,40 @@
 
 	<form>
 		<label for="firstname">First Name:</label>
-		<input type="text" name="firstname" placeholder="John" required>
+		<input type="text" id="firstname" name="firstname" placeholder="John" required>
 
 		<label for="lastname">Last Name:</label>
-		<input type="tex" name="lastname" placeholder="Smith" required>
+		<input type="tex" id="lastname" name="lastname" placeholder="Smith" required>
 
 		<br>
 
 		<label>
 			Male
-			<input type="radio" name="sex" value="Male">			
+			<input type="radio" id="male" name="sex" value="Male">			
 		</label>		
 
 		<label>
 			Female
-			<input type="radio" name="sex" value="Female">	
+			<input type="radio" id="female" name="sex" value="Female">	
 		</label>
 		
 		<label>
 			Other
-			<input type="radio" name="sex" value="Other">	
+			<input type="radio" id="other" name="sex" value="Other">	
 		</label>
 
 		<br>
 
 		<label for="mail">Email:</label>
-		<input type="email" name="mail" placeholder="your email" required>
+		<input type="email" id="email" name="mail" placeholder="your email" required>
 
 		<label for="pass">Password:</label>
-		<input type="password" name="pass" pattern=".{5,10}" title="Please fill out this field. 5 to 10 characters" placeholder="your password" required>
+		<input type="password" id="password" name="pass" pattern=".{5,10}" title="5 to 10 characters" placeholder="your password" required>
 
 		<br>
 
 		<label for="month">Birthday:</label>
-		<select name="month">
+		<select id="month" name="month">
 			<option>Month</option>
 			<option value="January" selected="">January</option>
 			<option value="February">February</option>
@@ -50,7 +50,7 @@
 			<option value="May">May</option>
 		</select>
 
-		<select name="day">
+		<select id="day" name="day">
 			<option>Day</option>
 			<option value="1" selected="">1</option>			
 			<option value="2">2</option>			
@@ -62,7 +62,7 @@
 			<option value="8">8</option>			
 		</select>
 
-		<select name="year">
+		<select id="year" name="year">
 			<option>Year</option>
 			<option value="1980" selected="">1980</option>
 			<option value="1981">1981</option>
@@ -77,7 +77,7 @@
 		<br>
 
 		<label for="agree">I agree to the terms and conditions</label>
-		<input type="checkbox" name="agree">
+		<input type="checkbox" id="agree" name="agree">
 
 		<br>
 
