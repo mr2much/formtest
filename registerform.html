@@ -7,79 +7,79 @@
 	<h1>Register</h1>
 
 	<form>
-		<label for="firstname">First Name:</label>
-		<input type="text" id="firstname" name="firstname" placeholder="John" required>
+		<div>
+			<label for="firstname">First Name:</label>
+			<input type="text" id="firstname" name="firstname" placeholder="John" required>
 
-		<label for="lastname">Last Name:</label>
-		<input type="tex" id="lastname" name="lastname" placeholder="Smith" required>
+			<label for="lastname">Last Name:</label>
+			<input type="tex" id="lastname" name="lastname" placeholder="Smith" required>
+		</div>
 
-		<br>
+		<div>
+			<label>
+				Male
+				<input type="radio" id="male" name="sex" value="Male">			
+			</label>		
 
-		<label>
-			Male
-			<input type="radio" id="male" name="sex" value="Male">			
-		</label>		
+			<label>
+				Female
+				<input type="radio" id="female" name="sex" value="Female">	
+			</label>
+			
+			<label>
+				Other
+				<input type="radio" id="other" name="sex" value="Other">	
+			</label>
+		</div>
 
-		<label>
-			Female
-			<input type="radio" id="female" name="sex" value="Female">	
-		</label>
-		
-		<label>
-			Other
-			<input type="radio" id="other" name="sex" value="Other">	
-		</label>
+		<div>
+			<label for="mail">Email:</label>
+			<input type="email" id="email" name="mail" placeholder="your email" required>
 
-		<br>
+			<label for="pass">Password:</label>
+			<input type="password" id="password" name="pass" pattern=".{5,10}" title="5 to 10 characters" placeholder="your password" required>
+		</div>
 
-		<label for="mail">Email:</label>
-		<input type="email" id="email" name="mail" placeholder="your email" required>
+		<div>
+			<label for="month">Birthday:</label>
+			<select id="month" name="month">
+				<option>Month</option>
+				<option value="January" selected="">January</option>
+				<option value="February">February</option>
+				<option value="March">March</option>
+				<option value="April">April</option>
+				<option value="May">May</option>
+			</select>
 
-		<label for="pass">Password:</label>
-		<input type="password" id="password" name="pass" pattern=".{5,10}" title="5 to 10 characters" placeholder="your password" required>
+			<select id="day" name="day">
+				<option>Day</option>
+				<option value="1" selected="">1</option>			
+				<option value="2">2</option>			
+				<option value="3">3</option>			
+				<option value="4">4</option>			
+				<option value="5">5</option>			
+				<option value="6">6</option>			
+				<option value="7">7</option>			
+				<option value="8">8</option>			
+			</select>
 
-		<br>
+			<select id="year" name="year">
+				<option>Year</option>
+				<option value="1980" selected="">1980</option>
+				<option value="1981">1981</option>
+				<option value="1982">1982</option>
+				<option value="1983">1983</option>
+				<option value="1984">1984</option>
+				<option value="1985">1985</option>
+				<option value="1986">1986</option>
+				<option value="1987">1987</option>
+			</select>
+		</div>
 
-		<label for="month">Birthday:</label>
-		<select id="month" name="month">
-			<option>Month</option>
-			<option value="January" selected="">January</option>
-			<option value="February">February</option>
-			<option value="March">March</option>
-			<option value="April">April</option>
-			<option value="May">May</option>
-		</select>
-
-		<select id="day" name="day">
-			<option>Day</option>
-			<option value="1" selected="">1</option>			
-			<option value="2">2</option>			
-			<option value="3">3</option>			
-			<option value="4">4</option>			
-			<option value="5">5</option>			
-			<option value="6">6</option>			
-			<option value="7">7</option>			
-			<option value="8">8</option>			
-		</select>
-
-		<select id="year" name="year">
-			<option>Year</option>
-			<option value="1980" selected="">1980</option>
-			<option value="1981">1981</option>
-			<option value="1982">1982</option>
-			<option value="1983">1983</option>
-			<option value="1984">1984</option>
-			<option value="1985">1985</option>
-			<option value="1986">1986</option>
-			<option value="1987">1987</option>
-		</select>
-
-		<br>
-
-		<label for="agree">I agree to the terms and conditions</label>
-		<input type="checkbox" id="agree" name="agree">
-
-		<br>
+		<div>
+			<label for="agree">I agree to the terms and conditions</label>
+			<input type="checkbox" id="agree" name="agree">
+		</div>
 
 		<input type="submit">		
 	</form>
