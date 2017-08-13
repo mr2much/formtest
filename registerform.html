@@ -2,86 +2,97 @@
 <html>
 <head>
 	<title>Form Register</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
 </head>
 <body>
-	<h1>Register</h1>
-
-	<form>
-		<div>
-			<label for="firstname">First Name:</label>
-			<input type="text" id="firstname" name="firstname" placeholder="John" required>
-
-			<label for="lastname">Last Name:</label>
-			<input type="tex" id="lastname" name="lastname" placeholder="Smith" required>
+	<div class="container">
+		<div class="jumbotron">
+			<h1>Register</h1>
 		</div>
-
 		<div>
-			<label>
-				Male
-				<input type="radio" id="male" name="sex" value="Male">			
-			</label>		
+			<form>
+				<div class="form-group">
+					<label for="firstname">First Name:</label>
+					<input type="text" class="form-control" id="firstname" name="firstname" placeholder="John" required>			
+				</div>
 
-			<label>
-				Female
-				<input type="radio" id="female" name="sex" value="Female">	
-			</label>
-			
-			<label>
-				Other
-				<input type="radio" id="other" name="sex" value="Other">	
-			</label>
+				<div class="form-group">
+					<label for="lastname">Last Name:</label>
+					<input type="tex" class="form-control" id="lastname" name="lastname" placeholder="Smith" required>
+				</div>
+
+				<div class="form-check form-group">
+					<label class="form-check-label">
+						Male
+						<input class="form-check-input" type="radio" id="male" name="sex" value="Male">			
+					</label>		
+
+					<label class="form-check-label">
+						Female
+						<input class="form-check-input" type="radio" id="female" name="sex" value="Female">	
+					</label>
+					
+					<label class="form-check-label">
+						Other
+						<input class="form-check-input" type="radio" id="other" name="sex" value="Other">	
+					</label>
+				</div>
+
+				<div class="form-group">
+					<label for="mail">Email:</label>
+					<input class="form-control" type="email" id="email" name="mail" placeholder="your email" required>				
+				</div>
+
+				<div class="form-group">
+					<label for="pass">Password:</label>
+					<input class="form-control" type="password" id="password" name="pass" pattern=".{5,10}" title="Password must be between 5 and 10 characters" placeholder="your password" required>
+				</div>
+
+				<div class="form-group">
+					<label for="month">Birthday:</label>
+					<select class="form-control" id="month" name="month">
+						<option>Month</option>
+						<option>January</option>
+						<option>February</option>
+						<option>March</option>
+						<option>April</option>
+						<option>May</option>
+					</select>
+
+					<select class="form-control" id="day" name="day">
+						<option>Day</option>
+						<option>1</option>			
+						<option>2</option>			
+						<option>3</option>			
+						<option>4</option>			
+						<option>5</option>			
+						<option>6</option>			
+						<option>7</option>			
+						<option>8</option>			
+					</select>
+
+					<select class="form-control" id="year" name="year">
+						<option>Year</option>
+						<option>1980</option>
+						<option>1981</option>
+						<option>1982</option>
+						<option>1983</option>
+						<option>1984</option>
+						<option>1985</option>
+						<option>1986</option>
+						<option>1987</option>
+					</select>
+				</div>
+
+				<div class="form-check form-group">
+					<label class="form-check-label" for="agree">I agree to the terms and conditions</label>
+					<input class="form-check-input" type="checkbox" id="agree" name="agree">
+				</div>
+
+				<button class="btn btn-success btn-lg" type="submit">Submit</button>		
+			</form>
 		</div>
-
-		<div>
-			<label for="mail">Email:</label>
-			<input type="email" id="email" name="mail" placeholder="your email" required>
-
-			<label for="pass">Password:</label>
-			<input type="password" id="password" name="pass" pattern=".{5,10}" title="Password must be between 5 and 10 characters" placeholder="your password" required>
-		</div>
-
-		<div>
-			<label for="month">Birthday:</label>
-			<select id="month" name="month">
-				<option>Month</option>
-				<option>January</option>
-				<option>February</option>
-				<option>March</option>
-				<option>April</option>
-				<option>May</option>
-			</select>
-
-			<select id="day" name="day">
-				<option>Day</option>
-				<option>1</option>			
-				<option>2</option>			
-				<option>3</option>			
-				<option>4</option>			
-				<option>5</option>			
-				<option>6</option>			
-				<option>7</option>			
-				<option>8</option>			
-			</select>
-
-			<select id="year" name="year">
-				<option>Year</option>
-				<option>1980</option>
-				<option>1981</option>
-				<option>1982</option>
-				<option>1983</option>
-				<option>1984</option>
-				<option>1985</option>
-				<option>1986</option>
-				<option>1987</option>
-			</select>
-		</div>
-
-		<div>
-			<label for="agree">I agree to the terms and conditions</label>
-			<input type="checkbox" id="agree" name="agree">
-		</div>
-
-		<input type="submit">		
-	</form>
+	</div>
 </body>
 </html>
